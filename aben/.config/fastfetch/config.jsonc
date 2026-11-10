@@ -32,6 +32,12 @@
             "format": "----------------------------------------"
         },
         {
+            "type": "users",
+            "key": "  USER",
+            "myselfOnly": true,
+            "format": "{1}"
+        },
+        {
             "type": "os",
             "key": "  OS",
             "format": "Arch (btw)"
