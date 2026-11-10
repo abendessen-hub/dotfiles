@@ -1,0 +1,71 @@
+* {
+    font-family: "Love Letter Typewriter", "Courier Prime", "Special Elite", "Courier New", Courier, monospace;
+    font-size: 13px;
+    font-weight: bold;
+    border: none;
+    border-radius: 0;
+}
+
+window#waybar {
+    background-color: rgba(10, 14, 20, 0.85); /* Layered cyber steel tint */
+    color: #b0c4de;
+}
+
+#custom-lain-intro {
+    color: #ff6347; /* Distant industrial signal red */
+    padding: 0 10px;
+    margin: 4px 2px;
+    border: 1px dashed rgba(255, 99, 71, 0.4);
+}
+
+#workspaces button {
+    padding: 0 10px;
+    background-color: transparent;
+    color: #4682b4;
+}
+
+#workspaces button.active {
+    color: #87cefa;
+    border-bottom: 2px solid #87cefa; 
+}
+
+#workspaces button.urgent {
+    background-color: #ff6347;
+    color: #0a0e14;
+}
+
+#mpris {
+    color: #b0c4de;
+    padding: 0 15px;
+    margin: 4px 2px;
+    border: 1px solid rgba(176, 196, 222, 0.3);
+    background-color: rgba(20, 30, 45, 0.3);
+}
+
+#clock,
+#cpu,
+#memory,
+#temperature,
+#network,
+#pulseaudio,
+#tray {
+    padding: 0 12px;
+    color: #add8e6;
+    margin: 4px 2px;
+    border: 1px solid rgba(135, 206, 250, 0.2);
+    background-color: rgba(20, 30, 45, 0.5);
+}
+
+#clock {
+    color: #e0ffff;
+    font-weight: 900;
+}
+
+#network.disconnected, #temperature.critical {
+    color: #ff6347;
+    border-color: #ff6347;
+}
+
+#pulseaudio.muted {
+    color: #5f9ea0;
+}
