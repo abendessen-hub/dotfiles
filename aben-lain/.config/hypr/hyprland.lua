@@ -11,7 +11,7 @@
 -- Default generic configuration (overridable per system)
 hl.monitor({
     output   = "",
-    mode     = "preferred",
+    mode     = "highres",
     position = "auto",
     scale    = "auto",
 })
