@@ -1,0 +1,74 @@
+// ~/.config/fastfetch/config.jsonc
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/blob/dev/doc/json_schema.json",
+    "logo": {
+        "type": "builtin",
+        "source": "arch_small",
+        "color": {
+            "1": "bright_cyan",
+            "2": "white"
+        },
+        "padding": {
+            "top": 2,
+            "left": 2,
+            "right": 4
+        }
+    },
+    "display": {
+        "separator": " -> ",
+        "color": {
+            "keys": "bright_cyan",
+            "title": "white",
+            "output": "bright_white"
+        }
+    },
+    "modules": [
+        {
+            "type": "custom",
+            "format": "You still here? Me too."
+        },
+        {
+            "type": "custom",
+            "format": "----------------------------------------"
+        },
+        {
+            "type": "users",
+            "key": "  USER",
+            "myselfOnly": true,
+            "format": "{1}"
+        },
+        {
+            "type": "os",
+            "key": "  OS",
+            "format": "Arch (btw)"
+        },
+        {
+            "type": "host",
+            "key": "  NAVI"
+        },
+        {
+            "type": "kernel",
+            "key": "  LINK"
+        },
+        {
+            "type": "uptime",
+            "key": "  UPTIME"
+        },
+        {
+            "type": "shell",
+            "key": "  SHELL"
+        },
+        {
+            "type": "memory",
+            "key": "  MEM"
+        },
+        {
+            "type": "custom",
+            "format": "----------------------------------------"
+        },
+        {
+            "type": "custom",
+            "format": "Present Day, Present Time... Hahaha..."
+        }
+    ]
+}
