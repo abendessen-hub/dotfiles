@@ -8,7 +8,7 @@ local mainMod = "SUPER_L"
 
 -- Pin windows
 
-hl.bind("SUPER + mouse:275", function()
+hl.bind(mainMod .. " + mouse:275", function()
     local win = hl.get_active_window()
     if not win then return end
     if not win.floating then
@@ -41,23 +41,22 @@ hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd(programs.activateMenu))
 hl.bind(mainMod .. " + O",     hl.dsp.exec_cmd(programs.toggleBar))
 
 -- Window actions
-hl.bind(mainMod .. " + X", hl.dsp.window.close())
+hl.bind(mainMod .. " + C", hl.dsp.window.close())
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ mode = "fullscreen", action = "toggle" }))
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + B", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + N", hl.dsp.layout("togglesplit"))
 hl.bind(mainMod .. " + M", hl.dsp.group.toggle())
-hl.bind(mainMod .. " + A", hl.dsp.focus({ workspace = "e-1"}))
-hl.bind(mainMod .. " + D", hl.dsp.focus({ workspace = "e+1"}))
-
-hl.bind(mainMod .. " + SHIFT + A", hl.dsp.window.move({ workspace = "e-1"}))
-hl.bind(mainMod .. " + SHIFT + D", hl.dsp.window.move({ workspace = "e+1"}))
+hl.bind(mainMod .. " + A", hl.dsp.focus({ workspace = "r-1"}))
+hl.bind(mainMod .. " + D", hl.dsp.focus({ workspace = "r+1"}))
+hl.bind(mainMod .. " + SHIFT + A", hl.dsp.window.move({ workspace = "r-1"}))
+hl.bind(mainMod .. " + SHIFT + D", hl.dsp.window.move({ workspace = "r+1"}))
 
 -- Mouse Actions
-hl.bind(mainMod .. " + mouse_up", hl.dsp.focus({ workspace = "e-1"}))
-hl.bind(mainMod .. " + mouse_down", hl.dsp.focus({ workspace = "e+1"}))
-hl.bind(mainMod .. " + SHIFT + mouse_up", hl.dsp.window.move({ workspace = "e-1"}))
-hl.bind(mainMod .. " + SHIFT + mouse_down", hl.dsp.window.move({ workspace = "e+1"}))
+hl.bind(mainMod .. " + mouse_up", hl.dsp.focus({ workspace = "r-1"}))
+hl.bind(mainMod .. " + mouse_down", hl.dsp.focus({ workspace = "r+1"}))
+hl.bind(mainMod .. " + SHIFT + mouse_up", hl.dsp.window.move({ workspace = "r-1"}))
+hl.bind(mainMod .. " + SHIFT + mouse_down", hl.dsp.window.move({ workspace = "r+1"}))
 
 -- Workspaces 1-10
 for i = 1, 10 do
