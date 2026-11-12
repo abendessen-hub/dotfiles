@@ -1,0 +1,11 @@
+# Session data may contain authentication and account state.
+sessionData/
+
+# Crash reports and Electron runtime state.
+Crashpad/
+Singleton*
+state.json
+
+# Generated logs.
+*.log
+*.log.*
