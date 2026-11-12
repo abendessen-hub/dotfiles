@@ -1,7 +1,12 @@
 # Dotfiles
 
 Personal Arch Linux + Hyprland dotfiles managed with **GNU Stow**.
-Shout out to [Ascanio's Hyprlain which im using rn](https://github.com/Ascaniolamp/Hyprlain)
+
+## Attribution and Third-Party Licenses
+
+This repository includes and adapts files from [Hyprlain](https://github.com/Ascaniolamp/Hyprlain) by [Ascanio](https://github.com/Ascaniolamp). The upstream project states that most of its code and submodules are licensed under GPL-3.0, while some submodules have separate terms. Its graphics and sounds are excluded from that license and remain the property of their respective rights holders.
+
+I did not create or claim ownership of third-party assets included in `sddm-lain*`, `grub-lain`, or `aben-lain`. Their original owners’ rights and applicable terms still apply; this repository does not grant permission to reuse those assets.
 
 ## Packages Overview
 
