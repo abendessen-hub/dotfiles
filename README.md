@@ -1,6 +1,7 @@
 # Dotfiles
 
 Personal Arch Linux + Hyprland dotfiles managed with **GNU Stow**.
+Shout out to [Ascanio's Hyprlain which im using rn](https://github.com/Ascaniolamp/Hyprlain)
 
 ## Packages Overview
 
